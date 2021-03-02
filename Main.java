@@ -8,6 +8,7 @@ class Main {
     student1.setGPA(4.0);
     student1.setMajor("Electrical Engineering");
 
+// Creation of Me as a Student
     Student student2 = new Student();
 
     student2.setName("Sam Dobrowolski");
@@ -19,20 +20,21 @@ class Main {
     //student1.gpa = 4.0;
     //student1.major = "Electrical Engineering";
 
+// Printing of the student Information
   student1.print();
   student2.print();
 
-    ArrayList<Double> gpas = new ArrayList<Double>();
-    gpas.add(0, student1.gpa);
-    gpas.add(1, student2.gpa);
+  //Creation of Array, Summation of Array, Average of total Summation
+  ArrayList<Double> gpas = new ArrayList<Double>();
+  gpas.add(0, student1.gpa);
+  gpas.add(1, student2.gpa);
 
-    double sum = 0;
-      for (int number = 0; number < gpas.size(); number++)
-        sum += gpas.get(number);
-    
-    double average = sum / gpas.size();
-    System.out.println("The average GPA is " + average);
-
+  double sum = 0;
+    for (int number = 0; number < gpas.size(); number++)
+      sum += gpas.get(number);
+  
+  double average = sum / gpas.size();
+  System.out.println("The average GPA is " + average);
 
   //System.out.println("student1's name is " + student1.getName() + " and their GPA is " + student1.getGPA() + " and their major is " + student1.getMajor();
 
